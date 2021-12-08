@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+:root {
+    --color: #4973ff;
+}
+
+body {
+    background-color: #e2effa;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-menu {
+    background: #040030 !important;
+}
+
+.titles {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    transition: color 0.4s, font-size 0.4s;
+    font-family: 'Raleway', sans-serif;
+}
+
+.titles:hover {
+    font-size: 3.2rem;
+}
+
+.gradient {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42vh;
+    width: 100%;
+    background: linear-gradient(90deg, #021A43, #19336d, #19348b, #19336d, #021A43);
+    background-size: 200% 200%;
+    animation: colors 7s ease infinite;
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#logo {
+    border-radius: 0.35rem;
+    /*width: 1.5rem;
+    height: 1.5rem;*/
+}
+
+a {
+    text-decoration: none !important;
+}
+
+label {
+    font-family: 'Raleway', sans-serif;
+    font-style: bold;
+}
+
+#li1,
+#li2,
+#li3 {
+    color: #00cfc5;
+    transition: 0.5s;
+}
+
+#li1:hover,
+#li2:hover,
+#li3:hover {
+    color: #ffffff;
+}
+
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero {
+    position: relative;
+    background: #000000;
+    color: white;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero h2 {
+    position: relative;
+    z-index: 1;
+    font-size: 3.8rem;
+    margin: -10px -100px 10px;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.9);
+    transition: font-size 0.5s;
+}
+
+.hero h2:hover {
+    font-size: 4rem;
+}
+
+.hero p {
+    position: relative;
+    z-index: 1;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.4;
+}
+
+.waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 218px;
+    background-color: var(--color);
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+    transition: 500ms;
+}
+
+.waves::before,
+.waves::after {
+    content: '';
+    position: absolute;
+    width: 300vw;
+    height: 300vw;
+    top: -67vw;
+    left: 50%;
+    transform: translate(-50%, -75%);
+}
+
+.waves::before {
+    border-radius: 44%;
+    background: rgb(1, 6, 49);
+    animation: waves 14s linear infinite;
+}
+
+.waves::after {
+    border-radius: 44%;
+    background: rgba(4, 46, 85, 0.5);
+    animation: waves 30s linear infinite;
+}
+
+@keyframes waves {
+    0% {
+        transform: translate(-50%, -75%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -75%) rotate(360deg);
+    }
+}
+
+.bg-backform {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, #b5c9d6, #D3E0EA, #A2D2FF, #bcd8eb, #D3E0EA);
+    background-size: 200% 200%;
+    animation: colors 10s ease infinite;
+}
+
+.bg-texttitle {
+    color: midnightblue;
+    font-size: 2.5rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.modal-content {
+    border-radius: 1.5rem;
+}
+
+.modal-body {
+    background: rgb(255, 255, 255);
+    color: #000;
+}
+
+.modal-body>p {
+    color: #000;
+}
+
+#i1,
+#i2,
+#i3 {
+    width: 100%;
+    height: 80%;
+    color: #000;
+    vertical-align: center !important;
+    text-align: center !important;
+    line-height: inherit!important;
+    transition: font-size 0.5s, color 0.5s;
+}
+
+#i1:hover,
+#i2:hover,
+#i3:hover {
+    color: #040030;
+    font-size: 680%;
+}
+
+.img-fluid {
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.icon-social {
+    font-size: 2.5rem;
+}
+
+.btn-personal {
+    color: #ffffff;
+    background-color: #113966;
+    border-color: #005d7a;
+}
+
+.btn-personal:hover {
+    color: #010f1d;
+    background-color: #A2D2FF;
+    border-color: #050236;
+}
+
+.btn-personal:focus,
+.btn-personal.focus {
+    box-shadow: 0 0 0 0.2rem rgba(11, 3, 43, 0.5);
+}
+
+.bg-rodape {
+    background-color: #040030;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ffffff;
+    width: 25rem;
+}
+
+#iroda1,
+#iroda2,
+#iroda3 {
+    color: #e2effa;
+    font-size: 2.5rem;
+    transition: font-size 0.5s;
+}
+
+#iroda1:hover,
+#iroda2:hover,
+#iroda3:hover {
+    font-size: 2rem;
+}
+
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.back-to-top:hover {
+    background: #005d7a;
+    color: #fff;
+}
+
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: #113966;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: all 0.4s;
+}
+
+.polaroid {
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    border-radius: 0.5rem;
+    transition: width 0.4s, padding 0.4s;
+    transition-timing-function: ease;
+}
+
+.polaroid:hover {
+    width: 280px;
+}
+
+.bg-polaroid {
+    padding: 20px;
+}

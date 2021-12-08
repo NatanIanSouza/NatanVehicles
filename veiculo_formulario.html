@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="libs/icons/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Veículo - Formulário</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-menu bg-dark fixed-top">
+        <a href="index.html" class="navbar-brand text-white ml-5" id="nome"><img id="logo" src="imagens/Logo_natan_ian_azul.png" width="30" height="30" class="d-inline-block align-top "> Natan Vehicles</a>
+        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="my-nav" class="collapse navbar-collapse mr-5">
+            <ul class="navbar-nav ml-auto ">
+                <li class="nav-item active">
+                    <a class="nav-link bg-link" href="index.html" id="li1"><i class="fas fa-home"></i> Home<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link bg-link" href="Login" id="li2"><i class="fas fa-clipboard-check"></i> Login<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link bg-link" href="About" id="li3"><i class="fas fa-mail-bulk"></i> About<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link bg-link" href="vitrine.php" id="li3"><i class="fas fa-car"></i> Vitrine<span class="sr-only"></span></a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div class="jumbotron gradient">
+        <h1 class="titles mt-5">Cadastro de Veículos</h1>
+    </div>
+
+    <div class="row justify-content-center mt-5">
+        <div class="col-12 col-sm-12 col-md-10  ">
+            <div class="row bg-backform">
+                <div class="col-12 col-sm-12 col-md-12 mt-5">
+                    <form action="inserir_veiculo.php" method="POST" class="form-horizontal">
+
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <label class="control-label">Placa:</label>
+                                        <input type="text" class="form-control" name="placa" placeholder="Insira a placa">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <label class="control-label">Chassi:</label>
+                                        <input type="text" class="form-control" name="chassi" placeholder="Insira o chassi">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <label class="control-label">imagem:</label>
+                                        <input type="text" class="form-control" name="imagem" placeholder="Insira a imagem.jpg ou .png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <label class="control-label">Cor:</label>
+                                        <input type="text" class="form-control" name="cor" placeholder="Insira a cor do veículo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <label class="control-label">Preço:</label>
+                                        <input type="text" class="form-control" name="preco" placeholder="Insira o preço">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <label class="control-label">Modelo:</label>
+                                        <input type="text" class="form-control" name="modelo" placeholder="Insira o modelo do veículo">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <label class="control-label">Marca:</label>
+                                        <select class="form-control" name="marca" id="select-marca">
+                                        <option value="Audi">Audi</option>
+                                        <option value="Bmw">BMW</option>
+                                        <option value="Chevrolet">Chevrolet</option>
+                                        <option value="Citroen">Citroen</option>
+                                        <option value="Dodge">Dodge</option>
+                                        <option value="Ferrari">Ferrari</option>
+                                        <option value="Fiat">Fiat</option>
+                                        <option value="Ford">Ford</option>
+                                        <option value="Honda">Honda</option>
+                                        <option value="Hyundai">Hyundai</option>
+                                        <option value="Jac">JAC</option>
+                                        <option value="Jaguar">Jaguar</option>
+                                        <option value="Jeep">Jeep</option>
+                                        <option value="Kia">KIA</option>
+                                        <option value="Lamborghini">Lamborghini</option>
+                                        <option value="Land_hover">Land Hover</option>
+                                        <option value="Maserati">Maserati</option>
+                                        <option value="Mclaren">McLaren</option>
+                                        <option value="Mercedes">Mercedes-Benz</option>
+                                        <option value="Mitsubishi">Mitsubishi</option>
+                                        <option value="Nissan">Nissan</option>
+                                        <option value="Porshe">Porshe</option>
+                                        <option value="Renault">Renault</option>
+                                        <option value="Subaru">Subaru</option>
+                                        <option value="Suzuki">Suzuki</option>
+                                        <option value="Toyota">Toyota</option>
+                                        <option value="Volkswagen">Volkswagen</option>
+                                        <option value="Yamaha">Yamaha</option>
+                                    </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <label class="control-label">Quilometragem:</label>
+                                        <input type="number" class="form-control" name="km" placeholder="Insira a quilometragem rodada">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <label class="control-label">Combustível:</label>
+                                        <select class="form-control" name="combustivel" id="select-combustivel">
+                                        <option value="diesel">Diesel</option>
+                                        <option value="etanol">Etanol</option>
+                                        <option value="flex">Flex</option>
+                                        <option value="gasolina">Gasolina</option>
+                                    </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <label class="control-label">Ano de Fabricação:</label>
+                                        <select class="form-control" name="ano_fabrica" id="select-ano">
+                                        <option value="1980">1980</option>
+                                        <option value="1981">1981</option>
+                                        <option value="1982">1982</option>
+                                        <option value="1983">1983</option>
+                                        <option value="1984">1984</option>
+                                        <option value="1985">1985</option>
+                                        <option value="1986">1986</option>
+                                        <option value="1987">1987</option>
+                                        <option value="1988">1988</option>
+                                        <option value="1989">1989</option>
+                                        <option value="1990">1990</option>
+                                        <option value="1991">1991</option>
+                                        <option value="1992">1992</option>
+                                        <option value="1993">1993</option>
+                                        <option value="1994">1994</option>
+                                        <option value="1995">1995</option>
+                                        <option value="1996">1996</option>
+                                        <option value="1997">1997</option>
+                                        <option value="1998">1998</option>
+                                        <option value="1999">1999</option>
+                                        <option value="2000">2000</option>
+                                        <option value="2001">2001</option>
+                                        <option value="2002">2002</option>
+                                        <option value="2003">2003</option>
+                                        <option value="2004">2004</option>
+                                        <option value="2005">2005</option>
+                                        <option value="2006">2006</option>
+                                        <option value="2007">2007</option>
+                                        <option value="2008">2008</option>
+                                        <option value="2009">2009</option>
+                                        <option value="2010">2010</option>
+                                        <option value="2011">2011</option>
+                                        <option value="2012">2012</option>
+                                        <option value="2013">2013</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                    </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <label class="control-label">Tipo:</label>
+                                <input type="text" class="form-control" name="tipo" placeholder="Insira o tipo do veículo (Ex: sedan)">
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center mb-2">
+                            <div class="col-12 col-sm-12 col-md-2 mt-2">
+                                <button class="btn btn-personal">Cadastrar</button>
+                            </div>
+
+                        </div>
+                    </form>
+
+                    <div class="row justify-content-center mb-4">
+                        <div class="col-12 col-sm-12 col-md-2 ml-4">
+                            <form action="adm.php">
+                                <div class="row mt-2">
+                                    <div class="col-12 col-sm-12 col-md-2 ">
+                                        <button class="btn btn-personal">Voltar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div> <br> <br>
+
+    <div class="modal fade" id="modal-info" role="dialog" aria-labelledby="information" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Título da Modal</h2> <br><br>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptates temporibus at deleniti nam dolorem voluptatem perspiciatis nostrum ipsa iusto? Perspiciatis vel deserunt error dolores reiciendis cumque necessitatibus? Modi,
+                        molestias?
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid bg-rodape">
+        <div class="row justify-content-center mt-5">
+            <div class="col-12 col-sm-12 col-md-12 mt-5 mb-2 text-center">
+                <a href="https://api.whatsapp.com/send?phone=5514996553882" target="about_blank"><i class="fab fa-whatsapp mr-2 ml-2" id="iroda1"></i></i></a>
+                <a href="https://www.instagram.com/natan_iansouza/" target="about_blank"><i class="fab fa-instagram mr-2 ml-2" id="iroda2"></i></a>
+                <a href="https://www.facebook.com/natanian.massondesouza.9/" target="about_blank"><i class="fab fa-facebook-square mr-2 ml-2" id="iroda3"></i></a>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 text-center mb-3">
+                <hr style="width: 14rem;">
+                <h6 class="text-white">Todos os Direitos Reservados &copy</h6>
+                <p class="text-white" style="font-size: 0.8rem;">Natan Ian M. de Souza</p>
+
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center active" id="backtotop"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/scroll.js"></script>
+</body>
+
+</html>
